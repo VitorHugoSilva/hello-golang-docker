@@ -11,5 +11,5 @@ steps:
 
   - id: "Criando imagem"
     name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '--tag=gcr.io/$PROJECT_ID/projeto_go', '.']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/projeto_go', '.']
 images: ['gcr.io/$PROJECT_ID/projeto_go']

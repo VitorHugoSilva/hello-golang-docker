@@ -1,4 +1,4 @@
-package projeto_go
+package main
 
 import (
 	"testing"
