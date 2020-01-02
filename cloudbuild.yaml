@@ -2,3 +2,11 @@ steps:
   - id: "Executando testes"
     name: 'gcr.io/cloud-builders/go:alpine'
     args: ['test', './src/projeto_go']
+    env: ["GOPATH=."]
+    dir: "./src"
+
+  - id: "Executando o Soma"
+      name: "gcr.io/cloud-builders/go"
+      args: ["run", "."]
+      env: ["GOPATH=."]
+      dir: "./src"
