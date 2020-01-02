@@ -1,17 +1,12 @@
 steps:
-  - id: "Instalando "
-    name: 'gcr.io/cloud-builders/go'
-    args: ['install', 'projeto_go']
-    env: ['GOPATH=.']
-
   - id: "Executando testes"
     name: 'gcr.io/cloud-builders/go:alpine'
-    args: ['test', 'projeto_go']
+    args: ['test', '.']
     env: ['GOPATH=.']
-    dir: './src'
+    dir: './src/projeto_go'
 
-#  - id: "Executando a Soma"
-#    name: 'gcr.io/cloud-builders/go:alpine'
-#    args: ['run', '.']
-#    env: ['GOPATH=.']
-#    dir: './src'
+  - id: "Executando a Soma"
+    name: 'gcr.io/cloud-builders/go:alpine'
+    args: ['run', '.']
+    env: ['GOPATH=.']
+    dir: './src/projeto_go'
