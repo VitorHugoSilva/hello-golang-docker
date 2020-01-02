@@ -6,7 +6,7 @@ steps:
     dir: "./src"
 
   - id: "Executando o Soma"
-      name: "gcr.io/cloud-builders/go"
-      args: ["run", "."]
-      env: ["GOPATH=."]
-      dir: "./src"
+    name: "gcr.io/cloud-builders/go"
+    args: ["run", "."]
+    env: ["GOPATH=."]
+    dir: "./src"
