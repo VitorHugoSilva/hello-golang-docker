@@ -1,4 +1,4 @@
-package main
+package projeto_go
 
 import (
     "fmt"
