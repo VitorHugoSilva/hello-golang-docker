@@ -5,7 +5,7 @@ steps:
     env: ['GOPATH=.']
     dir: './src'
 
-  - id: "Executando o Soma"
+  - id: "Executando a Soma"
     name: 'gcr.io/cloud-builders/go:alpine'
     args: ['run', '.']
     env: ['GOPATH=.']
